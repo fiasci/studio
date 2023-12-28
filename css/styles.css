@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('../assets/BerkeleyMono-Regular.woff2') format('woff2'),
+         url('../assets/BerkeleyMono-Regular.woff') format('woff');
+    /* Add other font formats (e.g., ttf) for even broader compatibility if needed */
+}
+
+html {
+    font-size: 16px; /* Set a base font size for better scalability */
+}
+
+body {
+    margin: 0;
+    font-size: 0.875em;
+    letter-spacing: -0.5px;
+    padding: 3.75rem; /* Equivalent to 60px */
+    font-family: 'BerkeleyMono-Regular', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #202020; /* Light gray text color for the body */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    max-width: 690px; /* Set the maximum width for the body text */
+    margin: 0 auto; /* Center the content within the available space */
+}
+
+.landing-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:end;
+    text-align: left;
+}
+
+.landing-section img {
+    height: 40px;
+}
+
+hr {
+    border: 0.0625rem solid #202020; /* Equivalent to 1px */
+    margin: 1.25rem 0; /* Equivalent to 20px */
+}
+
+.text-description {
+    margin-top: 1.25rem; /* Equivalent to 20px */
+}
+
+.text-block {
+    display: flex;
+    flex-direction: row; /* Stack items horizontally */
+    align-items: top; /* Align items vertically in the center */
+    justify-content: space-between; /* Add space between the items */
+}
+
+.text-block > *:first-child {
+    flex: 0 0 20%; /* Set the first child to be 30% of the container width */
+}
+
+.text-block > * {
+    text-align: left; /* Left alignment for paragraphs */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    margin-right: 1.25rem; /* Space between paragraphs, adjust as needed */
+}
+
+.text-block > :last-child {
+    margin-right: 0; /* Reset margin for the last paragraph */
+}
+
+
+.external-link-button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition for the hover effect */
+    font-family: 'BerkeleyMono-Regular', Arial, sans-serif;
+
+
+}
+
+.external-link-button:hover {
+    background-color: #000000; /* Darker blue color on hover, adjust as needed */
+    border: 1px dotted black;
+    color: white;
+
+}
+
